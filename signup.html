@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabta</title>
+    <!-- Custom StyleSheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ICONSCOUNT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Google Font (MONTSERRAT)-->
+
+
+</head>
+
+<body>
+    <section class="form_section">
+        <div class="container form_section_container">
+            <h2 class="form_h2"> سجل الان</h2>
+                <div class="alert_message error">
+                    <p>
+                    </p>
+                </div>
+            <form action="#" enctype="multipart/form-data" method="post">
+                <input type="text" name="first_name" placeholder="الاسم الاول">
+                <input type="text" name="last_name" placeholder="الاسم الاخير">
+                <input type="email" name="email" placeholder="الحساب الالكتروني">
+                <input type="password" name="password" placeholder="كلمة السر">
+                <input type="password" name="confirm_password" placeholder=" تأكيد كلمة السر">
+                <select name="user_role">
+                    <option value="0">دور المستخدم</option>
+                    <option value="normal_user"> مستخدم عادي</option>
+                    <option value="expert">خبير</option>
+                </select>
+                <div class="form_control">
+                    <label for="avatar" class="form_pp">صورة الملف الشخصى</label>
+                    <input type="file" name="avatar" id="avatar" style="direction: rtl;">
+                </div>
+                <button type="submit" name="submit" class="btn form-btn"> تسجيل</button>
+                <div class="end_form">
+                    <small> لديك حساب بالفعل؟ <a href="login.html" style="color:white"> تسجيل الدخول</a> <a href="index.html" style="color:white">الرئيسية</a></small>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

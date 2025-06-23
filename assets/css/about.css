@@ -1,0 +1,79 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #032F30;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 18px;
+}
+nav {
+    background-color: #0a7075;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #f7a723;
+}
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.content-block {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.content-block img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.content-block h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #004d4d;
+}
+.content-block p,
+.content-block ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+@media (max-width: 768px) {
+    .content-block {
+        max-width: 90%;
+    }
+}
