@@ -12,14 +12,14 @@
 </head>
 
 <body>
-
-
-
-
-    <!-- شريط التنقل -->
     <nav class="main-nav">
+
         <div class="nav-container">
-            <ul class="nav-list">
+            <button class="mobile-nav-toggle" aria-controls="nav-list" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+                <span class="visually-hidden">القائمة</span>
+            </button>
+            <ul class="nav-list" id="nav-list">
                 <li class="nav-item">
                     <a href="#v1" class="nav-link active">
                         <i class="fas fa-user"></i>
@@ -847,6 +847,19 @@
 
     </section>
     </section>
+    <script>
+        // Burger menu toggle
+        const burger = document.querySelector('.mobile-nav-toggle');
+        const navList = document.getElementById('nav-list');
+        burger.addEventListener('click', function () {
+            navList.classList.toggle('active');
+            burger.classList.toggle('open');
+            // Change icon
+            const icon = burger.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    </script>
 </body>
 
 </html>
