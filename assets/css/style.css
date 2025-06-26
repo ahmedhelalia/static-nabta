@@ -2745,6 +2745,9 @@ textarea::placeholder {
     .class_15 {
         font-size: 18px;
     }
+    .class_41{
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 600px) {
